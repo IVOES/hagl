@@ -1,0 +1,224 @@
+src/fontx.c:61:14: style: The scope of the variable 'nc' can be reduced. [variableScope]
+    uint32_t nc, bc, sb, eb;
+             ^
+src/fontx.c:61:18: style: The scope of the variable 'bc' can be reduced. [variableScope]
+    uint32_t nc, bc, sb, eb;
+                 ^
+src/fontx.c:61:22: style: The scope of the variable 'sb' can be reduced. [variableScope]
+    uint32_t nc, bc, sb, eb;
+                     ^
+src/fontx.c:61:26: style: The scope of the variable 'eb' can be reduced. [variableScope]
+    uint32_t nc, bc, sb, eb;
+                         ^
+src/hagl_char.c:127:13: style: The scope of the variable 'temp' can be reduced. [variableScope]
+    wchar_t temp;
+            ^
+src/hagl_line.c:58:13: style: The scope of the variable 'e2' can be reduced. [variableScope]
+    int16_t e2;
+            ^
+src/hagl_polygon.c:130:22: style: Local variable 'i' shadows outer variable [shadowVariable]
+        for (int16_t i = 0; i < count; i += 2) {
+                     ^
+src/hagl_polygon.c:115:17: note: Shadowed declaration
+        int16_t i = 0;
+                ^
+src/hagl_polygon.c:130:22: note: Shadow variable
+        for (int16_t i = 0; i < count; i += 2) {
+                     ^
+src/hagl_rectangle.c:211:13: style: The scope of the variable 'rx0' can be reduced. [variableScope]
+    int16_t rx0, ry0, rx1, x, y, d;
+            ^
+src/hagl_rectangle.c:211:18: style: The scope of the variable 'ry0' can be reduced. [variableScope]
+    int16_t rx0, ry0, rx1, x, y, d;
+                 ^
+src/hagl_rectangle.c:211:23: style: The scope of the variable 'rx1' can be reduced. [variableScope]
+    int16_t rx0, ry0, rx1, x, y, d;
+                      ^
+src/hsl.c:48:11: style: The scope of the variable 'temp1' can be reduced. [variableScope]
+    float temp1, temp2, tempr, tempg, tempb;
+          ^
+src/hsl.c:48:18: style: The scope of the variable 'temp2' can be reduced. [variableScope]
+    float temp1, temp2, tempr, tempg, tempb;
+                 ^
+src/hsl.c:48:25: style: The scope of the variable 'tempr' can be reduced. [variableScope]
+    float temp1, temp2, tempr, tempg, tempb;
+                        ^
+src/hsl.c:48:32: style: The scope of the variable 'tempg' can be reduced. [variableScope]
+    float temp1, temp2, tempr, tempg, tempb;
+                               ^
+src/hsl.c:48:39: style: The scope of the variable 'tempb' can be reduced. [variableScope]
+    float temp1, temp2, tempr, tempg, tempb;
+                                      ^
+src/tjpgd.c:516:17: style: Condition 'z' is always true [knownConditionTrueFalse]
+            if (z) {
+                ^
+src/tjpgd.c:513:19: note: Assuming that condition 'b==0' is not redundant
+            if (b == 0) break;     /* EOB? */
+                  ^
+src/tjpgd.c:514:19: note: Assuming condition is false
+            if (b < 0) return 0 - b;   /* Err: invalid code or input error */
+                  ^
+src/tjpgd.c:515:29: note: Assignment 'z=(uint16_t)b>>4', assigned value is 0
+            z = (uint16_t)b >> 4;    /* Number of leading zero elements */
+                            ^
+src/tjpgd.c:516:17: note: Condition 'z' is always true
+            if (z) {
+                ^
+src/tjpgd.c:159:14: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint16_t i;
+             ^
+src/tjpgd.c:160:13: style: The scope of the variable 'd' can be reduced. [variableScope]
+    uint8_t d, z;
+            ^
+src/tjpgd.c:195:27: style: The scope of the variable 'cls' can be reduced. [variableScope]
+    uint16_t i, j, b, np, cls, num;
+                          ^
+src/tjpgd.c:195:32: style: The scope of the variable 'num' can be reduced. [variableScope]
+    uint16_t i, j, b, np, cls, num;
+                               ^
+src/tjpgd.c:196:13: style: The scope of the variable 'd' can be reduced. [variableScope]
+    uint8_t d, *pb, *pd;
+            ^
+src/tjpgd.c:197:14: style: The scope of the variable 'hc' can be reduced. [variableScope]
+    uint16_t hc, *ph;
+             ^
+src/tjpgd.c:471:12: style: The scope of the variable 'd' can be reduced. [variableScope]
+    int b, d, e;
+           ^
+src/tjpgd.c:472:35: style: The scope of the variable 'id' can be reduced. [variableScope]
+    uint16_t blk, nby, nbc, i, z, id, cmp;
+                                  ^
+src/tjpgd.c:472:39: style: The scope of the variable 'cmp' can be reduced. [variableScope]
+    uint16_t blk, nby, nbc, i, z, id, cmp;
+                                      ^
+src/tjpgd.c:474:20: style: The scope of the variable 'hb' can be reduced. [variableScope]
+    const uint8_t *hb, *hd;
+                   ^
+src/tjpgd.c:474:25: style: The scope of the variable 'hd' can be reduced. [variableScope]
+    const uint8_t *hb, *hd;
+                        ^
+src/tjpgd.c:475:21: style: The scope of the variable 'hc' can be reduced. [variableScope]
+    const uint16_t *hc;
+                    ^
+src/tjpgd.c:476:20: style: The scope of the variable 'dqf' can be reduced. [variableScope]
+    const int32_t *dqf;
+                   ^
+src/tjpgd.c:759:14: style: The scope of the variable 'marker' can be reduced. [variableScope]
+    uint16_t marker;
+             ^
+src/tjpgd.c:761:23: style: The scope of the variable 'len' can be reduced. [variableScope]
+    uint16_t n, i, j, len;
+                      ^
+src/tjpgd.c:608:22: style: Local variable 'x' shadows outer argument [shadowArgument]
+            uint16_t x, y, r, g, b, s, w, a;
+                     ^
+src/tjpgd.c:552:14: note: Shadowed declaration
+    uint16_t x,  /* MCU position in the image (left of the MCU) */
+             ^
+src/tjpgd.c:608:22: note: Shadow variable
+            uint16_t x, y, r, g, b, s, w, a;
+                     ^
+src/tjpgd.c:608:25: style: Local variable 'y' shadows outer argument [shadowArgument]
+            uint16_t x, y, r, g, b, s, w, a;
+                        ^
+src/tjpgd.c:553:14: note: Shadowed declaration
+    uint16_t y  /* MCU position in the image (top of the MCU) */
+             ^
+src/tjpgd.c:608:25: note: Shadow variable
+            uint16_t x, y, r, g, b, s, w, a;
+                        ^
+src/tjpgd.c:661:18: style: Local variable 'x' shadows outer argument [shadowArgument]
+        uint16_t x, y;
+                 ^
+src/tjpgd.c:552:14: note: Shadowed declaration
+    uint16_t x,  /* MCU position in the image (left of the MCU) */
+             ^
+src/tjpgd.c:661:18: note: Shadow variable
+        uint16_t x, y;
+                 ^
+src/tjpgd.c:661:21: style: Local variable 'y' shadows outer argument [shadowArgument]
+        uint16_t x, y;
+                    ^
+src/tjpgd.c:553:14: note: Shadowed declaration
+    uint16_t y  /* MCU position in the image (top of the MCU) */
+             ^
+src/tjpgd.c:661:21: note: Shadow variable
+        uint16_t x, y;
+                    ^
+src/hagl_blit.c:43:0: style: The function 'hagl_blit_xy' is never used. [unusedFunction]
+
+^
+src/hagl_blit.c:83:0: style: The function 'hagl_blit_xywh' is never used. [unusedFunction]
+
+^
+src/hagl.c:53:0: style: The function 'hagl_clear' is never used. [unusedFunction]
+
+^
+src/hagl.c:88:0: style: The function 'hagl_close' is never used. [unusedFunction]
+
+^
+src/hagl_circle.c:42:0: style: The function 'hagl_draw_circle' is never used. [unusedFunction]
+
+^
+src/hagl_ellipse.c:40:0: style: The function 'hagl_draw_ellipse' is never used. [unusedFunction]
+
+^
+src/hagl_hline.c:40:0: style: The function 'hagl_draw_hline_xyw' is never used. [unusedFunction]
+
+^
+src/hagl_rectangle.c:47:0: style: The function 'hagl_draw_rectangle_xyxy' is never used. [unusedFunction]
+
+^
+src/hagl_rectangle.c:132:0: style: The function 'hagl_draw_rounded_rectangle_xyxy' is never used. [unusedFunction]
+
+^
+src/hagl_triangle.c:41:0: style: The function 'hagl_draw_triangle' is never used. [unusedFunction]
+
+^
+src/hagl_vline.c:40:0: style: The function 'hagl_draw_vline_xyh' is never used. [unusedFunction]
+
+^
+src/hagl_circle.c:79:0: style: The function 'hagl_fill_circle' is never used. [unusedFunction]
+
+^
+src/hagl_ellipse.c:113:0: style: The function 'hagl_fill_ellipse' is never used. [unusedFunction]
+
+^
+src/hagl_rectangle.c:206:0: style: The function 'hagl_fill_rounded_rectangle_xyxy' is never used. [unusedFunction]
+
+^
+src/hagl_triangle.c:48:0: style: The function 'hagl_fill_triangle' is never used. [unusedFunction]
+
+^
+src/hagl.c:79:0: style: The function 'hagl_flush' is never used. [unusedFunction]
+
+^
+src/hagl_char.c:42:0: style: The function 'hagl_get_glyph' is never used. [unusedFunction]
+
+^
+src/hagl_pixel.c:60:0: style: The function 'hagl_get_pixel' is never used. [unusedFunction]
+
+^
+src/hagl.c:68:0: style: The function 'hagl_init' is never used. [unusedFunction]
+
+^
+src/hagl_image.c:86:0: style: The function 'hagl_load_image' is never used. [unusedFunction]
+
+^
+src/hagl_char.c:125:0: style: The function 'hagl_put_text' is never used. [unusedFunction]
+
+^
+src/hsl.c:44:0: style: The function 'hsl_to_rgb888' is never used. [unusedFunction]
+
+^
+src/rgb565.c:51:0: style: The function 'rgb565_to_rgb888' is never used. [unusedFunction]
+
+^
+src/rgb888.c:44:0: style: The function 'rgb888_to_hsl' is never used. [unusedFunction]
+
+^
+src/rgb888.c:92:0: style: The function 'rgb888_to_rgb565' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
